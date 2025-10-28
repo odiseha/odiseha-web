@@ -1,1 +1,29 @@
-odiseha
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagen ancho completo</title>
+  <style>
+    /* Quitar márgenes y centrar contenido */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000; /* opcional */
+      height: 100vh;          /* opcional: que el body ocupe todo el viewport */
+    }
+
+    img {
+      width: 100%;   /* siempre ocupa todo el ancho del navegador */
+      height: auto;  /* la altura se ajusta automáticamente para mantener proporción */
+      object-fit: contain; /* asegura que no se deforme */
+    }
+  </style>
+</head>
+<body>
+  <img src="images/01.png" alt="Imagen 01">
+</body>
+</html>
